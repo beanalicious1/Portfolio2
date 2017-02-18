@@ -1,0 +1,416 @@
+
+/*----------------- CSS Reset ----------------------*/
+h1, h2, h3, h4, h5, h6, p {
+	padding: 0;
+	margin: 0;
+	font-weight: 400;
+	font-size: 16px;
+	
+}
+
+
+
+
+
+
+
+/*----------------- Header ----------------------*/
+header {
+	background-color: #444635;
+	border-bottom: 1px solid #e7e8d1;
+    background-image: url(../images/Tree.png);
+    background-repeat: no-repeat;
+    background-position: -20px -12px;
+    
+}
+header h1 {
+	color: #849D9A;
+	font-size: 2em;
+	font-weight: 700;
+	margin-left: 62px;
+	padding-top: .2em;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.4);
+}
+header h2 {
+	color: #FAE6AE;
+	font-size: 1em;
+	font-weight: 700;
+	margin-left: 75px;
+	padding-bottom: .2em;
+	letter-spacing: 2.3px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.6);
+}
+
+
+/*-----------------Navigation for Phone---------------*/
+@media only screen and (max-width: 600px) {
+nav {
+    background-color: #444635;
+}
+nav ul {
+    padding: .5em 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: .5em;
+    color: #d3ceaa;
+    text-decoration: none;
+    border: solid 1px #444635;
+    border-radius: 12px;
+    margin: 0 2%;
+    margin-bottom: .4em;
+    background: linear-gradient(to bottom, #444635 0%, #794719 100%);
+}
+nav ul li.active a {
+    
+    background: #794719;   
+}
+}/*end of phone*/
+
+
+
+/*-----------------Navigation for tablet and desktop---------------*/
+@media only screen and (min-width: 601px) {
+    
+nav {
+	background-color: #444635;
+    background: linear-gradient(to bottom, #444635 0%, #794719 100%);
+	
+}
+ul.menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+ul.menu a {
+	float: left;
+	color: #D3CEAA;
+	padding: .2em 1em;
+	text-decoration: none;
+	border-right: 1px solid #d3ceaf;
+}
+ul.menu a:hover {
+	color: #444635;
+	background-color: #d3ceaa;
+}
+ul.menu li.active a {
+	background-color: #444635;
+	color: #d3ceaa;
+	
+}
+ul.products {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+ul.products a {
+	float: left;
+	color: #d3ceaa;
+	background-color: #444635;
+	padding: .1em 1em;
+	text-decoration: none;
+	font-size: 14px;
+	border-right: 1px solid #d3ceaf;
+}
+ul.products a:hover {
+	background-color: #794719;
+	color: #e7e8d1;
+}    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+/*----------------- Body ----------------------*/
+body {
+	margin: 0;
+    background-color: #794719;
+	background-repeat: repeat-x;
+	font-family: 'Oswald', sans-serif;
+    
+}
+
+
+
+/*----------------CONTAINER-------------------------*/
+div#container {
+    max-width: 960px;
+    min-width: 320px;
+    background-color: #fbf7e4;
+    margin: 0 auto;
+    border: #000000;
+    box-shadow: 3px 5px 5px rgba(0,0,0,.6);
+    
+}
+
+
+
+/*---------------------Content--------------------*/
+h5 {
+	
+	font-size: 1em;
+	font-weight: 700;
+	padding-top: .3em;
+	padding-bottom: .2em;
+	letter-spacing: 2.3px;
+    margin-bottom: .4em;
+}
+    
+
+div#productID {
+	padding: 1em 3% .5em 3%;
+	
+}
+div#productID  h1{
+	font-size: 2.3em;
+	color: #794719;
+	font-weight: 700;
+	margin-bottom: .5em;
+	border-bottom: solid #424242;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.4);
+}
+div#content {
+	padding: 1em 3% .5em 3%;
+}
+div#content h1{
+	font-size: 2.3em;
+	color: #794719;
+	font-weight: 700;
+	margin-bottom: .5em;
+	border-bottom: solid #444635;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.4);
+}
+div#content p {
+	line-height: 135%;
+	padding-bottom: .4em;
+}
+p.block {
+	font-weight: 700;
+	padding-bottom: .2em;
+	/*border-bottom: 1px solid #794719;*/
+}
+div#content blockquote {
+	font-style: italic;
+	color: #444635;
+	margin: .5em;
+	padding-bottom: 1%;
+	font-size: .8em;
+}
+div#content address {
+    margin-left: 3%;
+}
+div#content a {
+	color: #444635;
+}
+div#content a:hover {
+	color: #794719;
+}
+div#content h3 {
+	font-weight: 700;
+	font-size: 20px;
+	color: #444635;
+	padding: .6em 0 .3em .4em;
+	border-bottom: 1px solid #794719;
+}
+div#content h4 {
+	font-weight: 400;
+	font-size: 16px;
+	color: #424242;
+	
+}
+div#signature p {
+	color: #444635;
+	margin-left: 3%;
+	font-size: 1em;
+}
+
+
+
+/*--------- IMAGES --------------------*/
+figure.sunset {
+	float:right;
+	text-align: center;
+	border: 1px solid #444635;
+	padding: .3em;
+	width: 45%;
+		
+}
+figure.sunset img {
+	width: 100%;
+}
+figure.sunset figcaption {
+	font-size: .9em;
+	color: #424242;
+}
+
+
+
+
+figure.objects {
+	margin: .70em;
+	width: 160px;
+	height: 250px;
+	border: 1px solid #444635;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	float: left;
+	background-color: #794719;
+}
+figure.objects span{
+	display: block;
+	color: #d3ceaa;
+	font-size: 1.2em;
+}
+figure.objects figcaption {
+	font-size: .7em;
+	color: black;
+	font-weight: 700;
+}
+    
+    
+    
+    
+    
+    
+    
+/*---------------TABLE-----------------------*/
+table.schedule {
+    border-collapse: collapse;
+    font-size: .8em;
+    border: solid 1px #444635;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.4);
+    width: 96%;
+    margin-left: 1%;
+    margin-bottom: 1em;
+    
+}
+table.schedule th {
+    text-align: left;
+    background-color: #8e001c;
+    color: #efefef;
+    font-size: 1.5em;
+    padding: .1em .5em;
+    
+}
+table.schedule td {
+    padding: .5em;    
+}
+table.schedule tr:nth-child(even) {
+    background-color: #e7e8d1;    
+    
+}
+table.schedule tr:hover {
+    background-color: #d3c3aa;
+    color: #8e001c;
+}
+
+
+
+
+/*----------------- Footer ----------------------*/
+
+footer {
+	background-color: #444635;
+	clear: both;
+}
+footer p {
+	text-align: center;
+	font-size: .8em;
+	padding: .4em;
+	color: #e7e8d1;
+}
+
+
+/*----------------- Content list ----------------------*/
+ul.circle, ul.square, ul.disc {
+    margin: 0;
+    padding: 0;
+}
+    
+ul.circle li, ul.square li, ul.disc li {
+    background-repeat: no-repeat;
+    list-style-type: none;
+    margin-left: 1%;
+    padding-left: 25px;
+    padding-bottom: 7px;
+    background-position: left center;
+}
+
+
+dl dt {
+	color: #444635;
+	margin-bottom: 4px;
+	margin-left: 3%;
+	font-weight: bold;
+	padding-bottom: 1px;
+	border-bottom: solid 1px #424242;
+
+}
+dl dd {
+	color: #8E001C;
+	font-style: italic;
+	margin-bottom: 3px;
+	margin-left: 5%;
+	
+}
+/*-------------------FORM STUFF-----------------*/
+form.contact fieldset {
+	margin-bottom: 2em;
+	border-radius: 8px;
+	border-color: #d3ceaf;
+	font-size: .8em;
+	color: #444635
+}
+form.contact legend{
+	font-weight: 700;
+	font-size: 1.4em;
+	margin-left: 1em;
+	
+}
+form.contact label {
+	display: block;
+	
+}
+form.contact span {
+	display: block;
+	padding-top: .8em;
+	
+}
+form.contact input.userbutton {
+	width: 16em;
+	padding: .9em;
+	margin-left: 1.15%;
+	background: linear-gradient(to bottom, #d3ceaa 0%, #444635 177%);
+	border: 2px solid #444635;
+	border-radius: 8px;
+}
+form.contact .userInput {
+	color: #335311;
+	width: 20em;
+	border-radius: 8px;
+	border: 1px solid #d3ceaf;
+	padding: .4em;
+	background-color: #e7e8d1;
+}
+
+
+
+
+
+
+/*----------------- MISC ----------------------*/
+div.headerSquish {
+	clear: both;
+}
+div.productsSquish {
+	clear: both;
+}

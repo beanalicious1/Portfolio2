@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Daniel's Portfolio Site</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1" />
+
+<link href="css/style.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div id="container">
+<header>
+	<h1>This Could Be An Awesome Portfolio Page</h1>
+	<h2>It's really up to you</h2>
+</header>
+
+<nav>
+
+<ul class="menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="resume.html">Resume</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li class="active"><a href="contact.html">Contact Me</a></li>
+</ul>
+<div class="headerSquish"></div>
+</nav>
+
+<div id="content">
+
+<h1>Tell Me What You Want!</h1>
+<form action="FormToEmail.php" method="post" enctype="multipart/form-data" name="subscription" class="contact">
+
+
+
+<fieldset>
+<legend>Personal Information</legend>
+	<div><label><span>Name:</span> <input class="userInput" name="fullname" type="text" value="" placeholder="What's your name, hun?" pattern="[a-zA-Z .-]{3,99}" required/></label></div>
+	<div><label><span>Address:</span> <input class="userInput" name="address" type="text" value="" placeholder="Home Address" pattern="{5,99}" required/></label></div>
+	<div><label><span>Email:</span> <input class="userInput" name="email" type="email" value="" placeholder="youremail@email.com" required/></label></div>
+	<div><label><span>Phone:</span> <input class="userInput" name="phone" type="tel" value="" placeholder="123-564-7412" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/></label></div>
+	<div><label><span>What would you like me to do for you, in detail?: </span><textarea class="userInput" name="how"></textarea></label></div>
+</fieldset>
+
+
+<fieldset>
+<legend>Services Information</legend>
+
+<span>What Would You Like??</span>
+<label><input name="howToContact" type="radio" value="Website" /> Website</label>
+<label><input name="howToContact" type="radio" value="Non-Website" /> Non-Website</label>
+<label><input name="howToContact" type="radio" value="French Toast" /> Breakfast Food</label>
+
+<span>Do you enjoy these things???</span>
+<label><input name="Eating" type="checkbox" value="Yes" /> Eating</label>
+<label><input name="Sleeping" type="checkbox" value="Yes" /> Sleeping</label>
+<label><input name="Eaten by Tiger" type="checkbox" value="Yes" /> Eaten By Tiger</label>
+
+<label><span>When would you like your project finished by?</span><input class="userInput" name="date" type="date" value="" /> </label>
+
+
+<label><span>How do you want to pay me for my services?</span>
+<select class="userInput" name="PaymentType">
+<option>VISA</option>
+<option>MasterCard</option>
+<option>American Express</option>
+<option>PayPal</option>
+</select></label>
+</fieldset>
+
+<input name="submit" value="Dooooo it." type="submit" class="userbutton" />
+
+<input name="subject" value="Signup for vacation" type="hidden" />
+<input name="redirect" value="index.html" type="hidden" />
+
+
+</form>
+</div>
+
+<footer>
+	<p>&copy;2017 Daniel Bean &bull; Built for MATC </p>
+</footer>
+</div>    
+</body>
+</html>
